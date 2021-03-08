@@ -1,5 +1,7 @@
 package com.frja.wifilocation.model;
 
+import java.util.Date;
+
 public class User {
     private String userId;
 
@@ -8,6 +10,17 @@ public class User {
     private Integer userAuthority;
 
     private String userPassword;
+
+    private Date createTime;
+
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
     public String getUserPassword() {
         return userPassword;
@@ -39,5 +52,16 @@ public class User {
 
     public void setUserAuthority(Integer userAuthority) {
         this.userAuthority = userAuthority;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userAuthority=" + userAuthority +
+                ", userPassword='" + userPassword + '\'' +
+                ", createTime=" + createTime +
+                '}';
     }
 }

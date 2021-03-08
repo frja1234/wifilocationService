@@ -13,7 +13,7 @@ import java.awt.*;
 @Component
 public interface UserMapper {
     //插入用户信息
-    @Insert("insert into tbl_user(user_id,user_name,user_authority) values (#{userId},#{userName},#{userAuthority})")
+    @Insert("insert into tbl_user(user_id,user_name,user_authority,user_password,create_date) values (#{userId},#{userName},#{userAuthority},#{userPassword},#{createTime})")
     int insert(User user);
     //修改用户信息
     int update(User user);

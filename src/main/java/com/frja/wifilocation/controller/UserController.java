@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -64,6 +63,7 @@ public class UserController {
     public Map<String,Object> insert(User user){
         Map<String,Object> resultMap = new HashMap<>();
         try {
+            System.out.println(user.toString());
             int id = userService.register(user);
             resultMap.put("data",id);// 返回记录主键id
             resultMap.put("code","200");
