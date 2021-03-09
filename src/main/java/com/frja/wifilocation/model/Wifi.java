@@ -14,12 +14,6 @@ public class Wifi {
 
     private String createTime;
 
-    public Wifi() {
-        ap1 = 0;
-        ap2 = 0;
-        ap3 = 0;
-        ap4 = 0;
-    }
 
     public String getWifiPointId() {
         return wifiPointId;

@@ -24,7 +24,7 @@ public class WifiMap {
 
     @Override
     public String toString() {
-        return "WifiMap{" +
+        return "{" +
                 "wifiMapX='" + wifiMapX + '\'' +
                 ", wifiMapY='" + wifiMapY + '\'' +
                 '}';

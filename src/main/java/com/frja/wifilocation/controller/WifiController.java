@@ -112,11 +112,11 @@ public class WifiController {
         Map<String, Object> resultMap = new HashMap<>();
         boolean flag = false;
         try {
+            System.out.println(wifi);
             WifiMap wifiMap = wifiService.wifiLocation(wifi);
             if(wifi!=null) flag=true;
-            System.out.println(" vfjd");
             if(flag){
-                resultMap.put("data",wifiMap);
+                resultMap.put("data",wifiMap.toString());
                 resultMap.put("code", "200");
                 resultMap.put("msg", "定位成功");
             }else{

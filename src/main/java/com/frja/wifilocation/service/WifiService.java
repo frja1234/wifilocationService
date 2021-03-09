@@ -2,8 +2,6 @@ package com.frja.wifilocation.service;
 
 import com.frja.wifilocation.model.Wifi;
 import com.frja.wifilocation.model.WifiMap;
-import com.frja.wifilocation.model.WifiPoint;
-import com.frja.wifilocation.model.WifiSignal;
 
 public interface WifiService {
 
