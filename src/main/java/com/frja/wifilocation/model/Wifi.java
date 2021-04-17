@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Wifi {
 
-    private String wifiPointId;
+    private String mapName;
 
     private String mapX;
 
@@ -15,12 +15,12 @@ public class Wifi {
     private String createTime;
 
 
-    public String getWifiPointId() {
-        return wifiPointId;
+    public String getMapName() {
+        return mapName;
     }
 
-    public void setWifiPointId(String wifiPointId) {
-        this.wifiPointId = wifiPointId;
+    public void setMapName(String mapName) {
+        this.mapName = mapName;
     }
 
     public String getMapX() {
@@ -82,7 +82,7 @@ public class Wifi {
     @Override
     public String toString() {
         return "{" +
-                "wifiPointId='" + wifiPointId + '\'' +
+                "mapName='" + mapName + '\'' +
                 ", mapX='" + mapX + '\'' +
                 ", mapY='" + mapY + '\'' +
                 ", ap1=" + ap1 +

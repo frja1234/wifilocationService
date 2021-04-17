@@ -28,7 +28,7 @@ public class WifiController {
             boolean flag = wifiService.wifiPointStore(wifi);
             System.out.println(" vfjd");
             if(flag){
-                resultMap.put("data",wifi.getWifiPointId());
+                resultMap.put("data",wifi.getMapName());
                 resultMap.put("code", "200");
                 resultMap.put("msg", "存储成功");
             }else{
@@ -56,7 +56,7 @@ public class WifiController {
             boolean flag = wifiService.wifiUpdateByMap(wifi);
             System.out.println(" vfjd");
             if(flag){
-                resultMap.put("data",wifi.getWifiPointId());
+                resultMap.put("data",wifi.getMapName());
                 resultMap.put("code", "200");
                 resultMap.put("msg", "更新成功");
             }else{
@@ -79,15 +79,15 @@ public class WifiController {
 
     //获取某点指纹
     @RequestMapping(value = "/wifiApByMap",method = RequestMethod.POST)
-    public Map<String, Object> wifiApByMap(@RequestBody WifiMap wifiMap){
+    public Map<String, Object> wifiApByMap(@RequestBody Wifi wifi){
         Map<String, Object> resultMap = new HashMap<>();
         try {
-            Wifi wifi = wifiService.wifiAp(wifiMap);
+            Wifi w = wifiService.wifiAp(wifi);
             System.out.println(" vfjd");
             if(wifi!=null){
-                resultMap.put("data",wifi.toString());
+                resultMap.put("data",w.toString());
                 resultMap.put("code", "200");
-                resultMap.put("msg", "存储成功");
+                resultMap.put("msg", "获取成功");
             }else{
                 resultMap.put("data","");
                 resultMap.put("code", "500");

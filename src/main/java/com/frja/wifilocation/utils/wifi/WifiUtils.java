@@ -1,7 +1,6 @@
 package com.frja.wifilocation.utils.wifi;
 import com.frja.wifilocation.model.Wifi;
 import com.frja.wifilocation.model.WifiMap;
-import com.frja.wifilocation.model.WifiPoint;
 
 import java.util.*;
 

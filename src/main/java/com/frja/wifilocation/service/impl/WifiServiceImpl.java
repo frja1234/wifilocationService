@@ -27,9 +27,9 @@ public class WifiServiceImpl implements WifiService {
     }
 
     @Override
-    public Wifi wifiAp(WifiMap wifiMap) {
+    public Wifi wifiAp(Wifi wifi) {
 
-        return wifiMapper.selectApByMap(wifiMap);
+        return wifiMapper.selectApByMap(wifi);
     }
 
     @Override
